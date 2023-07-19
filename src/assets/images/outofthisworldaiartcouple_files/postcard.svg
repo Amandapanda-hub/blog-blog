@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32"
+   height="32"
+   version="1.1"
+   viewBox="0 0 32 32"
+   id="svg6102"
+   sodipodi:docname="postcard.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6106" />
+  <sodipodi:namedview
+     id="namedview6104"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="24.34375"
+     inkscape:cx="15.979461"
+     inkscape:cy="16"
+     inkscape:window-width="2341"
+     inkscape:window-height="1003"
+     inkscape:window-x="631"
+     inkscape:window-y="240"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg6102" />
+  <rect
+     transform="rotate(-90)"
+     x="-28"
+     width="24"
+     height="32"
+     rx="3"
+     ry="3"
+     fill="#77c10d"
+     stroke-dashoffset="12.8"
+     stroke-linejoin="bevel"
+     stroke-opacity="0.6"
+     stroke-width="2"
+     style="paint-order:stroke markers fill"
+     id="rect6082"
+     y="0" />
+  <rect
+     x="4"
+     y="15"
+     width="14"
+     height="3"
+     rx="0.99999994"
+     ry="1"
+     stroke-dashoffset="12.8"
+     stroke-linejoin="bevel"
+     stroke-opacity="0.6"
+     stroke-width="2"
+     style="fill:#ffffff;paint-order:stroke markers fill"
+     id="rect6084" />
+  <rect
+     x="4"
+     y="20"
+     width="14"
+     height="3"
+     rx="0.99999994"
+     ry="1"
+     stroke-dashoffset="12.8"
+     stroke-linejoin="bevel"
+     stroke-opacity="0.6"
+     stroke-width="2"
+     style="fill:#ffffff;paint-order:stroke markers fill"
+     id="rect6086" />
+  <g
+     transform="matrix(0.0267,0,0,0.0273,3.17,8)"
+     stroke-width="37"
+     id="g6096"
+     style="fill:#ffffff">
+    <g
+       fill="#ffffff"
+       stroke-width="37"
+       id="g6090" />
+    <g
+       fill="#ffffff"
+       stroke-width="37"
+       id="g6094" />
+  </g>
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke-width:0;stroke-linejoin:round;stroke-dashoffset:12.8"
+     id="rect6625"
+     width="7"
+     height="8"
+     x="21"
+     y="7"
+     rx="1"
+     ry="1" />
+</svg>
