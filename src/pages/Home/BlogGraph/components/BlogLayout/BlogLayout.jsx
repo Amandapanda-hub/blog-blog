@@ -5,7 +5,6 @@ import {BsFacebook} from 'react-icons/bs'
 import { FaTwitter, FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 
 
-
 export default function BlogLayout() {
   // data for the longer containers >>
   const longContainerData = [
@@ -21,7 +20,6 @@ export default function BlogLayout() {
     { title: 'Title 10', subtitle: 'Subtitle 10', description: 'Description 10', imgSrc: 'https://images.unsplash.com/photo-1640622843377-6b5af9417e70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTMzNXwwfDF8c2VhcmNofDQ2Nnx8YXJ0fGVufDF8fHx8MTY4OTcwMzk2Mnww&ixlib=rb-4.0.3&q=80&w=1000' },
 
   ];
-
   // data for the smaller column containers >>
   const smallContainerData = [
     { imgRound: 'https://images.unsplash.com/photo-1601887389937-0b02c26b602c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NTMzNXwwfDF8c2VhcmNofDI1OHx8YXJ0fGVufDF8fHx8MTY4OTcwMzg1M3ww&ixlib=rb-4.0.3&q=80&w=1000' },
@@ -41,7 +39,6 @@ export default function BlogLayout() {
   ];
 
   return (
-
     // long containers >>
     <div className='m-[10rem]'>
     <div className="flex flex-col md:flex-row justify-between">
@@ -74,7 +71,7 @@ export default function BlogLayout() {
         </div>
       </div>
 
-      <div className="md:w-1/4 flex flex-col items-start md:items-stretch justify-start md:space-y-8">
+      <div className="md:w-1/4 flex flex-col items-start md:items-stretch justify-start md:space-y-20">
           {/* the first container with a round image */}
           <div className="h-80 w-full bg-transparent mb-4 md:mb-0 flex flex-col items-center justify-center p-4">
             <img src={smallContainerData[0].imgRound} alt="Small Img" className="w-24 h-24 rounded-full object-cover" />
@@ -88,24 +85,30 @@ export default function BlogLayout() {
               <i className=""><FaYoutube/></i>
             </div>
           </div>
-
           {/* rest of the small column containers */}
           <div className='flex flex-col items-center space-y-20'>
             {smallContainerData.map((data, index) => {
-              if (index === 0 ) {
-                return null;
-              }
-              if (data.images) {
-                return <BlogCarousel key={index} images={data.images} showDots={index === 1 || index === 3} />;
-              } else {
-                return (
-                  <div key={index} className="h-80 w-60 bg-gray-300 mb-4 md:mb-0">
+            if (index === 0) {
+              return null;
+            }
+            if (data.images) {
+              return <BlogCarousel key={index} images={data.images} showDots={index === 1 || index === 3} />;
+            } else if (index === 2) {  // replace '3' with the index of the specific container where you want the button to appear
+              return (
+                <div key={index} className="h-80 w-60 bg-gray-300 mb-4 md:mb-0 relative flex items-center justify-center">
+                    <img src={data.imgSrc} alt="Small Img" className="w-full h-full object-cover absolute top-0 left-0" />
+                    <button className=" bg-white text-black px-4 py-2 mt-4 mb-4 rounded hover:bg-gray-200 absolute bottom-0">My Button</button>
+                </div>
+            );
+        } else {
+            return (
+                <div key={index} className="h-80 w-60 bg-gray-300 mb-4 md:mb-0">
                     <img src={data.imgSrc} alt="Small Img" className="w-full h-full object-cover" />
-                  </div>
-                );
-              }
-            })}
-          </div>
+                </div>
+            );
+        }
+    })}
+</div>
         </div>
       </div>
     </div>
