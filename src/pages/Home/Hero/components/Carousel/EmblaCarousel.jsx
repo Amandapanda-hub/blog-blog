@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState, useLayoutEffect } from 'react'
 import { FiArrowRightCircle, FiArrowLeftCircle } from 'react-icons/fi';
 import useEmblaCarousel from 'embla-carousel-react';
 import imageByIndex from './imageByIndex';
+import '../../../../../css/embla.css'
 
 const TWEEN_FACTOR = 4.2;
 
