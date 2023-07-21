@@ -18,31 +18,62 @@ export default function BlogLayout() {
 
   return (
     <div className='p-4 md:p-16 mx-auto'>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
-        <div className="col-span-1 md:col-span-2">
-          <TitleBanner />
-          <ImageContainer imgSrc={BigImage} />
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0">
+    <div className="col-span-1 md:col-span-2 md:pr-8">
+      <TitleBanner />
+      <ImageContainer imgSrc={BigImage} />
 
-          <div className="flex flex-col mt-10">
-            <hr style={hrShadow} className=''></hr>
-            {longContainerData.map((data, index) => (
-              <LongContainer key={index} data={data} />
-            ))}
-          </div>
-        </div>
-
-        <div className="col-span-1 mt-10 md:mt-0">
-          <AuthorContainer data={smallContainerData[0]} />
-
-          <div className='flex flex-col items-center space-y-20'>
-            {smallContainerData.map((data, index) => {
-              if (index !== 0) {
-                return <SmallContainer key={index} data={data} index={index} />;
-              }
-            })}
-          </div>
-        </div>
+      <div className="flex flex-col mt-10">
+        <hr style={hrShadow} className=''></hr>
+        {longContainerData.map((data, index) => (
+          <LongContainer key={index} data={data} />
+        ))}
       </div>
     </div>
+
+    <div className="col-span-1 mt-10 md:mt-20 md:pl-8">
+      <AuthorContainer data={smallContainerData[0]} />
+
+      <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:gap-8 justify-items-center md:mx-auto space-y-6">
+        {smallContainerData.map((data, index) => {
+          if (index !== 0) {
+            return <SmallContainer key={index} data={data} index={index} />;
+          }
+        })}
+      </div>
+    </div>
+  </div>
+</div>
   );
 }
+
+
+// /
+// {/* <div className='p-4 md:p-16 mx-auto'>
+//       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8">
+//         <div className="col-span-1 md:col-span-2 px-4 md:px-8">
+//           <TitleBanner />
+//           <ImageContainer imgSrc={BigImage} />
+
+//           <div className="flex flex-col mt-10">
+//             <hr style={hrShadow} className=''></hr>
+//             {longContainerData.map((data, index) => (
+//               <LongContainer key={index} data={data} />
+//             ))}
+//           </div>
+//         </div>
+
+//         <div className="col-span-1 mt-10 md:mt-0 px-4 md:px-8">
+//           <AuthorContainer data={smallContainerData[0]} />
+
+//           <div className='flex flex-col items-center space-y-20'>
+//             {smallContainerData.map((data, index) => {
+//               if (index !== 0) {
+//                 return <SmallContainer key={index} data={data} index={index} />;
+//               }
+//             })}
+//           </div>
+//         </div>
+//       </div>
+//     </div> */}
+// /

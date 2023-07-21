@@ -9,18 +9,18 @@ function BlogCarousel({ images, showDots = false }) {
   }
 
   return (
-    <div className='relative h-80 w-60 bg-gray-300 mb-4 md:mb-0'>
+    <div className='relative lg:h-80 lg:w-60 h-48 w-36 bg-gray-300 mb-4 md:mb-0'>
       <img 
         src={images[currentIndex]}
         alt={`Small Img ${currentIndex + 1}`} 
         className="w-full h-full object-cover" 
       />
       {showDots && 
-        <div className='absolute -bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-4'>
+        <div className='lg:absolute lg:-bottom-8 lg:left-1/2 lg:transform lg:-translate-x-1/2 flex space-y-2 lg:space-y-0 lg:space-x-2 lg:flex-row flex-col items-center justify-center lg:w-auto w-8 absolute -right-4 bottom-1/3 transform translate-x-1/2 -translate-y-1/2'>
           {images.map((image, index) => (
             <button 
               key={index}
-              className={`w-4 h-4 rounded-full ${index === currentIndex ? 'bg-gray-500' : 'bg-gray-400'}`}
+              className={`lg:w-4 lg:h-4 w-2 h-2 rounded-full ${index === currentIndex ? 'bg-gray-500' : 'bg-gray-400'}`}
               onClick={() => handleDotClick(index)}
             />
           ))}
