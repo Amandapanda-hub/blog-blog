@@ -20,11 +20,11 @@ const Navbar = () => {
             {isOpen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
           </div>
 
-          <div className={`flex md:flex hidden`}>
+          <div className={` md:flex hidden`}>
             <a href="/" className="p-2">
               <BsHouseHeart />
             </a>
-            <a href="/about" className="p-2">
+            <a href="#!" className="p-2">
               <GrArticle />
             </a>
             <a href="#!" className="p-2">
@@ -41,30 +41,30 @@ const Navbar = () => {
             Palette Paradise
           </a>
         </div>
-        <div className={`fixed inset-0 z-20 bg-black bg-opacity-50 h-full w-full items-center justify-center transform transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0 flex" : "translate-x-full hidden"}`}>
+        <div className={`fixed inset-0 z-20 bg-white bg-opacity-100 h-full w-full items-center justify-center transform transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0 flex" : "translate-x-full hidden"}`}>
           <AiOutlineClose className="absolute top-0 right-0 m-6 md:hidden" onClick={handleToggle} size={30} />
           <div className="flex flex-col items-center space-y-5">
             <a
               href="#!"
-              className="text-sm text-gray-700 font-medium hover:text-indigo-500 mx-2 md:mx-4 md:my-0"
+              className="text-md text-black font-medium hover:text-indigo-500 mx-2 md:mx-4 md:my-0"
             >
               First link
             </a>
             <a
               href="#!"
-              className="text-sm text-gray-700 font-medium hover:text-indigo-500 mx-2 md:mx-4 md:my-0"
+              className="text-md text-black font-medium hover:text-indigo-500 mx-2 md:mx-4 md:my-0"
             >
               Second link
             </a>
             <a
               href="#!"
-              className="text-sm text-gray-700 font-medium hover:text-indigo-500 mx-2 md:mx-4 md:my-0"
+              className="text-md text-black font-medium hover:text-indigo-500 mx-2 md:mx-4 md:my-0"
             >
               Third link
             </a>
             <a
               href="#!"
-              className="text-sm text-gray-700 font-medium hover:text-indigo-500 mx-2 md:mx-4 md:my-0"
+              className="text-md text-black font-medium hover:text-indigo-500 mx-2 md:mx-4 md:my-0"
             >
               Fourth link
             </a>
