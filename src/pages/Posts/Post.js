@@ -33,7 +33,7 @@ const Post = () => {
                     <p className='pt-6'>{post.descriptionThree}</p>
                 </div>
             </div>
-            <div className="flex justify-between w-full px-20">
+            <div className="flex justify-between w-full px-20 pt-10">
                 <button 
                     onClick={() => goToPost(postId - 1)}
                     disabled={postId === 1}
