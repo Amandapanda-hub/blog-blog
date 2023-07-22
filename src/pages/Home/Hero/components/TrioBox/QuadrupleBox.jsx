@@ -3,7 +3,8 @@ import React from 'react';
 const BoxComponent = ({ image, buttonName }) => (
     <div className="flex flex-col items-center justify-center bg-white shadow-md rounded-md overflow-hidden sm:w-[10rem] w-[8rem] relative">
         <img src={image} alt="Box" className="sm:h-[10rem] h-[8rem] object-cover w-full" />
-            <button className="bg-white text-black px-4 py-2 mt-4 mb-4 rounded hover:bg-gray-200 absolute bottom-0">
+            {/* <button className="bg-white text-black px-4 py-2 mt-4 mb-4 rounded hover:bg-gray-200 absolute bottom-0"> */}
+            <button className="bg-white text-black px-4 py-2 mt-4 mb-4 rounded-full hover:bg-gray-200 absolute bottom-0">
                 {buttonName}
             </button>
     </div>
