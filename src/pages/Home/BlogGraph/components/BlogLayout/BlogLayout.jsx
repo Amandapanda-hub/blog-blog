@@ -17,7 +17,7 @@ export default function BlogLayout() {
   };
 
   return (
-    <div className='p-4 md:p-16 mx-auto'>
+    <div className='p-4 md:p-16 mx-auto lg:ml-[8rem]'>
   <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-0">
     <div className="col-span-1 md:col-span-2 md:pr-8">
       <TitleBanner />
@@ -31,10 +31,10 @@ export default function BlogLayout() {
       </div>
     </div>
 
-    <div className="col-span-1 mt-10 md:mt-20 md:pl-8">
+    <div className="col-span-1 mt-10 md:mt-20 md:pl-8 space-y-20">
       <AuthorContainer data={smallContainerData[0]} />
 
-      <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:gap-8 justify-items-center md:mx-auto space-y-6">
+      <div className="grid grid-cols-2 md:grid-cols-1 gap-4 md:gap-8 justify-items-center md:mx-auto space-y-10 ">
         {smallContainerData.map((data, index) => {
           if (index !== 0) {
             return <SmallContainer key={index} data={data} index={index} />;
