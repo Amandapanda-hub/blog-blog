@@ -25,6 +25,7 @@ const Post = () => {
         <div className="flex flex-col items-center w-full h-full space-y-2 py-10 mb-10 mt-10 post">
             <h1 className='text-5xl md:text-6xl font-bold'>{post.title}</h1>
             <h2 className='text-2xl md:text-3xl font-semibold'>{post.subtitle}</h2>
+            <h3 className='text-base md:text-base font-normal pb-6'>{post.date}</h3>
             <div className='flex flex-col w-2/3 md:w-1/3 items-center justify-center'>
                 <img src={post.imgSrc} alt={post.title} className='w-full h-[40rem] object-cover pb-10'/>
                 <div className="w-full text-left">
