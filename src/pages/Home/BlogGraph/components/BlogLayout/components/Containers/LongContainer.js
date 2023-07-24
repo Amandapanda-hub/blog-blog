@@ -10,8 +10,8 @@ function truncate(str, n) {
 
 export default function LongContainer({data}) {
     return (
-      <div className="flex flex-col md:flex-row items-center bg-gray-300 mt-9 md:h-40">
-        <img src={data.imgSrc} alt="Long img" className="w-full md:w-1/3 h-64 md:h-full object-cover" />
+      <div className="flex flex-col md:flex-row items-center bg-gray-300 mt-9 md:h-[15rem]">
+        <img src={data.imgSrc} alt="Long img" className="w-full h-full md:w-1/3 md:h-full object-cover" />
         <div className="p-4 flex flex-col justify-between w-full md:w-2/3 overflow-hidden">
           <div className="overflow-auto whitespace-normal overflow-wrap">
             <h1 className="text-2xl">{data.title}</h1>
